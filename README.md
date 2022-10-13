@@ -1,3 +1,3 @@
 - 👋 Hi, I’m @MaryKir
 - 👀 I’m interested in QA engineering
-- 🌱 I’m currently learning at course of QA engineer
+
