@@ -1,4 +1,4 @@
-![Header](http://127.0.0.1:5500/index.html)
+[![Header](https://github.com/MaryKir/MaryKir/blob/main/assets/WeChat%20Screenshot_20221013214102.png)](http://127.0.0.1:5500/index.html)
 
 ## I'm Software Engineer
 
