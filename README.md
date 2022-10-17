@@ -21,7 +21,7 @@
 - [Test Cases and Bug report](https://drive.google.com/drive/folders/1rV8UxCM1MA0vVc8JoCDPvhw2ijiTCr33?usp=sharing)
 - [Checklists](https://drive.google.com/drive/folders/1YgpeJJ18KiqDt5wdoCkE_Fsey9F-DAux?usp=sharing)
 - [Business requirements, Test report, Traceability matrix](https://drive.google.com/drive/folders/13deW7_11d_gsHTS4NSG7PnMD8ZkwOS9F?usp=sharing)
-- [Test Plan]()
+- [Test Plan](https://drive.google.com/drive/folders/1Y3-ylBt-7ShxrFTf_pNQ-aGSpmMOK60p?usp=sharing)
 - [Auto-tests Selenium IDE](https://drive.google.com/drive/folders/1Xrb2MTqM-i3RU-uQTofncBtDfXoZXd1Z?usp=sharing)
 - [Auto-tests API Postman](https://drive.google.com/drive/folders/1HaV_fYhD_ACBT44FcQBlzzs69uag-jXa?usp=sharing)
 - [Certificates](https://drive.google.com/drive/folders/1Y3-ylBt-7ShxrFTf_pNQ-aGSpmMOK60p?usp=sharing)
