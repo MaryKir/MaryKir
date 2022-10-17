@@ -16,6 +16,7 @@
 ![Header](https://img.shields.io/badge/CharlesProxy-090909?style=for-the-badge&logo=CharlesProxy&logoColor=8cc4d7)
 ![Header](https://img.shields.io/badge/SeleniumIDE-090909?style=for-the-badge&logo=SeleniumIDE&logoColor=8cc4d7)
 ![Header](https://img.shields.io/badge/Slack-090909?style=for-the-badge&logo=Slack&logoColor=8cc4d7)
+![Header](https://img.shields.io/badge/VScode-090909?style=for-the-badge&logo=VScode&logoColor=8cc4d7)
 ### Testing Documentation
 - [Test Documentation](https://drive.google.com/drive/folders/13VZAiiJLtQuqYKv4untzhz-4jPYFdkd2?usp=sharing)
 - [Test Cases and Bug report](https://drive.google.com/drive/folders/1rV8UxCM1MA0vVc8JoCDPvhw2ijiTCr33?usp=sharing)
