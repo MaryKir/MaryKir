@@ -1,0 +1,539 @@
+{
+	"info": {
+		"_postman_id": "537926de-b1a0-4fec-bab7-8c8e0c33aefa",
+		"name": "QASV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20327493"
+	},
+	"item": [
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Positive test",
+					"item": [
+						{
+							"name": "Create address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Response time is less than 4000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
+											"});\r",
+											"pm.test(\"Response size is less than 10000B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(10000);\r",
+											"});\r",
+											"pm.test(\"Body has id\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "SJ57BE69JUHY-nLYdFsSsIaOn-lFtLksqYL5-M-GgUU.eyJpbnN0YW5jZUlkIjoiYmE2Y2RiNDUtZjhhNy00ZjlmLWE4MzEtMDNiYWI1OTgzNDMyIiwiYXBwRGVmSWQiOiIxNDUxN2UxYS0zZmYwLWFmOTgtNDA4ZS0yYmQ2OTUzYzM2YTIiLCJtZXRhU2l0ZUlkIjoiMjhiNzkzZDYtNTQyNC00MDU4LTgwNDktMDI2YTRkYjAyODJmIiwic2lnbkRhdGUiOiIyMDIyLTEwLTE3VDE3OjUwOjU1LjM3OVoiLCJ1aWQiOiJkZjIwNDY0ZC04YTI5LTQwZWMtYWY1MC0zNjY4MjBmNTc2ZDUiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImFlOTE1NDgxLTk5ZGQtNDFlZS05MDE0LWRkM2NmZjkwZGI5NiIsImJpVG9rZW4iOiI5MmRiNDg5My1hYzgzLTBmYzctMjg3OC0wMWQwZjgyODFjMWQiLCJzaXRlT3duZXJJZCI6ImY5MTRmMTFjLWFhYjMtNDUyNy04ZDRlLWJhYjc2MjE0M2E2MCIsImV4cGlyYXRpb25EYXRlIjoiMjAyMi0xMC0xN1QyMTo1MDo1NS4zNzlaIiwiaGFzVXNlclJvbGUiOmZhbHNlfQ",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": {\r\n        \"fullName\": {\r\n            \"firstName\": \"Jane\",\r\n            \"lastName\": \"Lin\"\r\n        },\r\n        \"company\": \"Lin Lin\",\r\n        \"taxInfo\": {\r\n            \"id\": null,\r\n            \"type\": null\r\n        },\r\n        \"addressLine1\": \"7879 Katy Freeway\",\r\n        \"addressLine2\": \"222\",\r\n        \"street\": {\r\n            \"name\": null,\r\n            \"number\": null\r\n        },\r\n        \"city\": \"Houston\",\r\n        \"country\": \"USA\",\r\n        \"subdivision\": \"TX\",\r\n        \"zipCode\": \"77024\",\r\n        \"phoneNumber\": \"123-45-67-890\",\r\n        \"location\": {\r\n            \"latitude\": 29.7826844,\r\n            \"longitude\": -95.474671\r\n        }\r\n    },\r\n    \"setAsDefault\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check all addresses",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+											"});\r",
+											"pm.test(\"Response size is less than 1500B\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1500);\r",
+											"});\r",
+											"pm.test(\"Body has all addresses\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"addresses\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check one address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+											"});\r",
+											"pm.test(\"Response size is less than 2000B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(2000);\r",
+											"});\r",
+											"pm.test(\"Body has name Jane\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Jane\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/b6afb8a9-995f-4460-807d-77be9d5e67f9",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses",
+										"b6afb8a9-995f-4460-807d-77be9d5e67f9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change one address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+											"});\r",
+											"pm.test(\"Response size is less than 1500B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(1500);\r",
+											"});\r",
+											"pm.test(\"Body has {}\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"{}\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": {\r\n        \"id\": \"b6afb8a9-995f-4460-807d-77be9d5e67f9\",\r\n        \"fullName\": {\r\n            \"firstName\": \"Jane\",\r\n            \"lastName\": \"Lin\"\r\n        },\r\n        \"company\": \"Lin Lin1\",\r\n        \"taxInfo\": {\r\n            \"id\": null,\r\n            \"type\": null\r\n        },\r\n        \"addressLine1\": \"7879 Katy Freeway\",\r\n        \"addressLine2\": \"222\",\r\n        \"street\": {\r\n            \"name\": null,\r\n            \"number\": null\r\n        },\r\n        \"city\": \"Houston\",\r\n        \"country\": \"USA\",\r\n        \"subdivision\": \"TX\",\r\n        \"zipCode\": \"77024\",\r\n        \"phoneNumber\": \"123-45-67-890\",\r\n        \"location\": {\r\n            \"latitude\": 29.7826844,\r\n            \"longitude\": -95.474671\r\n        }\r\n    },\r\n    \"setAsDefault\": true,\r\n    \"fieldMask\": {\r\n        \"paths\": [\r\n            \"fullName.firstName\",\r\n            \"fullName.lastName\",\r\n            \"company\",\r\n            \"addressLine1\",\r\n            \"addressLine2\",\r\n            \"city\",\r\n            \"country\",\r\n            \"subdivision\",\r\n            \"zipCode\",\r\n            \"phoneNumber\",\r\n            \"location.latitude\",\r\n            \"location.longitude\",\r\n            \"setAsDefault\"\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/b6afb8a9-995f-4460-807d-77be9d5e67f9",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses",
+										"b6afb8a9-995f-4460-807d-77be9d5e67f9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check updated address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body has company name Lin Lin1\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Lin Lin1\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Response size is less than 1500B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(1500);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/b6afb8a9-995f-4460-807d-77be9d5e67f9",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses",
+										"b6afb8a9-995f-4460-807d-77be9d5e67f9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete one address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+											"});\r",
+											"pm.test(\"Response size is less than 1500B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(1500);\r",
+											"});\r",
+											"pm.test(\"Body has {}\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"{}\");\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/b6afb8a9-995f-4460-807d-77be9d5e67f9",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses",
+										"b6afb8a9-995f-4460-807d-77be9d5e67f9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check deleted address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body has text cant_find\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"cant_find\");\r",
+											"});\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+											"});\r",
+											"pm.test(\"Response size is less than 1500B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(1500);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/b6afb8a9-995f-4460-807d-77be9d5e67f9",
+									"protocol": "https",
+									"host": [
+										"addresses",
+										"wixapps",
+										"net"
+									],
+									"path": [
+										"_api",
+										"addresses-web",
+										"v1",
+										"addresses",
+										"b6afb8a9-995f-4460-807d-77be9d5e67f9"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "ss9LzLD6-HhBVSZQ_xDW0Ytne4hW3VY9wg6CNjyqQZg.eyJpbnN0YW5jZUlkIjoiZjQ2Y2Q1MDItZjcyZi00NGY3LTk2MzgtNWRhMWRlYjBiNGU3IiwiYXBwRGVmSWQiOiIxNTA1Yjc3NS1lODg1LWViMWItYjY2NS0xZTQ4NWQ5YmY5MGUiLCJtZXRhU2l0ZUlkIjoiMjhiNzkzZDYtNTQyNC00MDU4LTgwNDktMDI2YTRkYjAyODJmIiwic2lnbkRhdGUiOiIyMDIyLTA0LTA2VDAyOjQxOjU4LjY5N1oiLCJ1aWQiOiJkZjIwNDY0ZC04YTI5LTQwZWMtYWY1MC0zNjY4MjBmNTc2ZDUiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjllOTliNDcxLTcxZDAtNDJkNS05M2Y4LWViY2MxZjQ3NmQyNCIsImJpVG9rZW4iOiJkY2RiNDZkNC1hMzBiLTA0YWYtMTY3MS01ZmNiOTMwMDljYzgiLCJzaXRlT3duZXJJZCI6ImY5MTRmMTFjLWFhYjMtNDUyNy04ZDRlLWJhYjc2MjE0M2E2MCIsImV4cGlyYXRpb25EYXRlIjoiMjAyMi0wNC0wNlQwNjo0MTo1OC42OTdaIiwiaGFzVXNlclJvbGUiOmZhbHNlfQ",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "Authorization",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "SJ57BE69JUHY-nLYdFsSsIaOn-lFtLksqYL5-M-GgUU.eyJpbnN0YW5jZUlkIjoiYmE2Y2RiNDUtZjhhNy00ZjlmLWE4MzEtMDNiYWI1OTgzNDMyIiwiYXBwRGVmSWQiOiIxNDUxN2UxYS0zZmYwLWFmOTgtNDA4ZS0yYmQ2OTUzYzM2YTIiLCJtZXRhU2l0ZUlkIjoiMjhiNzkzZDYtNTQyNC00MDU4LTgwNDktMDI2YTRkYjAyODJmIiwic2lnbkRhdGUiOiIyMDIyLTEwLTE3VDE3OjUwOjU1LjM3OVoiLCJ1aWQiOiJkZjIwNDY0ZC04YTI5LTQwZWMtYWY1MC0zNjY4MjBmNTc2ZDUiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImFlOTE1NDgxLTk5ZGQtNDFlZS05MDE0LWRkM2NmZjkwZGI5NiIsImJpVG9rZW4iOiI5MmRiNDg5My1hYzgzLTBmYzctMjg3OC0wMWQwZjgyODFjMWQiLCJzaXRlT3duZXJJZCI6ImY5MTRmMTFjLWFhYjMtNDUyNy04ZDRlLWJhYjc2MjE0M2E2MCIsImV4cGlyYXRpb25EYXRlIjoiMjAyMi0xMC0xN1QyMTo1MDo1NS4zNzlaIiwiaGFzVXNlclJvbGUiOmZhbHNlfQ",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "SJ57BE69JUHY-nLYdFsSsIaOn-lFtLksqYL5-M-GgUU.eyJpbnN0YW5jZUlkIjoiYmE2Y2RiNDUtZjhhNy00ZjlmLWE4MzEtMDNiYWI1OTgzNDMyIiwiYXBwRGVmSWQiOiIxNDUxN2UxYS0zZmYwLWFmOTgtNDA4ZS0yYmQ2OTUzYzM2YTIiLCJtZXRhU2l0ZUlkIjoiMjhiNzkzZDYtNTQyNC00MDU4LTgwNDktMDI2YTRkYjAyODJmIiwic2lnbkRhdGUiOiIyMDIyLTEwLTE3VDE3OjUwOjU1LjM3OVoiLCJ1aWQiOiJkZjIwNDY0ZC04YTI5LTQwZWMtYWY1MC0zNjY4MjBmNTc2ZDUiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImFlOTE1NDgxLTk5ZGQtNDFlZS05MDE0LWRkM2NmZjkwZGI5NiIsImJpVG9rZW4iOiI5MmRiNDg5My1hYzgzLTBmYzctMjg3OC0wMWQwZjgyODFjMWQiLCJzaXRlT3duZXJJZCI6ImY5MTRmMTFjLWFhYjMtNDUyNy04ZDRlLWJhYjc2MjE0M2E2MCIsImV4cGlyYXRpb25EYXRlIjoiMjAyMi0xMC0xN1QyMTo1MDo1NS4zNzlaIiwiaGFzVXNlclJvbGUiOmZhbHNlfQ",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

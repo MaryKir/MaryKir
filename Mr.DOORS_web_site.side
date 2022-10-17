@@ -1,0 +1,1803 @@
+{
+  "id": "25fe687c-97b7-4f6d-a458-f66bdcbad462",
+  "version": "2.0",
+  "name": "Mr.DOORS_web_site",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "1b0da5c4-d76e-428d-82c5-9a06b9f6d7b9",
+    "name": "GUI_and_functional_testing",
+    "commands": [{
+      "id": "5fc340a6-3cc7-4c82-96f6-cbe7a33ee85d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.mrdoors.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e9a9259-6b75-4e6a-afea-6f59bad48e79",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1917x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7eb0f1d-82ec-465b-906d-1e62c6c43386",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Главная | Mr. Doors",
+      "targets": [],
+      "value": "Главная | Mr. Doors"
+    }, {
+      "id": "f702beb2-f30c-4fd8-b225-971bd071bf9f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.logo img",
+      "targets": [
+        ["css=.logo img", "css:finder"],
+        ["xpath=//img[@alt='Mr.Doors']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "737ecd36-5c8d-4196-a97e-5044ad4c41c0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.upper_header",
+      "targets": [
+        ["css=.upper_header", "css:finder"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "8a96cd40-97ae-4706-ac7c-86fe71aeadd2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.lower_header",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "0aef0af6-a8ac-4398-8047-49b04d35b3f2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.swiper-slide-visible .swiper-banner_box",
+      "targets": [
+        ["css=.swiper-slide-visible .swiper-banner_box", "css:finder"],
+        ["xpath=//div[@id='swiper-wrapper-c2dca52212c34bdf']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "1e1dda10-9910-46f6-93b5-34fcea96b621",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Мебель на заказ от Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Мебель на заказ от Mr.Doors"
+    }, {
+      "id": "b3dce8cd-cb0b-44e6-bed4-ab697c4ef862",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.lh_body_up_link b",
+      "targets": [
+        ["css=.lh_body_up_link b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Идеи интерьеров')]", "xpath:innerText"]
+      ],
+      "value": "Идеи интерьеров"
+    }, {
+      "id": "d3777547-8374-403f-b684-0c74dd754b07",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(2) b",
+      "targets": [
+        ["css=li:nth-child(2) b", "css:finder"],
+        ["xpath=//li[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Товары')]", "xpath:innerText"]
+      ],
+      "value": "Товары"
+    }, {
+      "id": "25df00b3-dd83-4858-be66-40c97e2d7de4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.search",
+      "targets": [
+        ["css=.search", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Товары"
+    }, {
+      "id": "90c8da16-f707-4089-a4bd-a4d3937acff1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=open_pop_up",
+      "targets": [
+        ["id=open_pop_up", "id"],
+        ["linkText=Обратный звонок", "linkText"],
+        ["css=.main__button-popup > #open_pop_up", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратный звонок')]", "xpath:link"],
+        ["xpath=//a[@id='open_pop_up']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратный звонок')]", "xpath:innerText"]
+      ],
+      "value": "Товары"
+    }, {
+      "id": "1da4a888-dd7c-4f3e-989a-409f55ba39f4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.lh_body_up_btns",
+      "targets": [
+        ["css=.lh_body_up_btns", "css:finder"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "6c589f2b-55e9-4014-844a-80cb15e266e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uh_link:nth-child(1) > .uh_link_text",
+      "targets": [
+        ["css=.uh_link:nth-child(1) > .uh_link_text", "css:finder"],
+        ["xpath=//a[contains(text(),'Адреса\n                                    салонов')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shops/moskva/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e03652d-779d-475b-a19b-9a0e60b605cb",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Салоны Ателье Мебели Mr.Doors в Москве')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "f929ad47-e28e-4f48-8c0f-2dfdf8af99ab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Салоны Ателье Мебели Mr.Doors в Москве')]", "xpath:innerText"]
+      ],
+      "value": "Салоны Ателье Мебели Mr.Doors в Москве"
+    }, {
+      "id": "cd2c3145-b67d-40c3-a33e-6efbb15c6315",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=На карте",
+      "targets": [
+        ["linkText=На карте", "linkText"],
+        ["css=.shops_list_header-item:nth-child(2) > .shops_list_header-link", "css:finder"],
+        ["xpath=//a[contains(text(),'На карте')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"changeViewShops('/shops/moskva/?viewMode=map', this);return false;\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'На карте')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de1d80e5-1679-410a-8241-642863aced31",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.ymaps-2-1-79-events-pane",
+      "targets": [
+        ["css=.ymaps-2-1-79-events-pane", "css:finder"],
+        ["xpath=//div[@id='ymap']/ymaps/ymaps/ymaps/ymaps", "xpath:idRelative"],
+        ["xpath=//ymaps/ymaps/ymaps/ymaps", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "90242fc3-f1b7-4b91-8b02-09fcb2f574f0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.ymaps-2-1-79-events-pane",
+      "targets": [
+        ["css=.ymaps-2-1-79-events-pane", "css:finder"],
+        ["xpath=//div[@id='ymap']/ymaps/ymaps/ymaps/ymaps", "xpath:idRelative"],
+        ["xpath=//ymaps/ymaps/ymaps/ymaps", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "7b27b270-c946-440a-9189-5fe4b929b0ac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.shops_list_header",
+      "targets": [
+        ["css=.shops_list_header", "css:finder"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81ee0c9e-5bed-41f3-99ce-e3a4db12c761",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.search-header-text",
+      "targets": [
+        ["css=.search-header-text", "css:finder"],
+        ["xpath=(//input[@name='q'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c61d2f-b91c-41dd-ad9f-18d0233abd82",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ymaps-2-1-79-searchbox-input__input",
+      "targets": [
+        ["css=.ymaps-2-1-79-searchbox-input__input", "css:finder"],
+        ["xpath=//ymaps[@id='id_166560466495395943797']/ymaps/ymaps/ymaps/input", "xpath:idRelative"],
+        ["xpath=//ymaps/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "203755a2-9359-44dd-985b-3c83118731c0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.small_banner",
+      "targets": [
+        ["css=.small_banner", "css:finder"],
+        ["xpath=//div[@id='js-shops-reload']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "4e56b954-e668-4a0d-bfc9-2c8124e2e8c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Списком",
+      "targets": [
+        ["linkText=Списком", "linkText"],
+        ["css=.shops_list_header-item:nth-child(1) > .shops_list_header-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Списком')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"changeViewShops('/shops/moskva/?viewMode=list', this);return false;\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Списком')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f1651ad-d465-485d-9fa3-bee3b7d5ad12",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.salon_items",
+      "targets": [
+        ["css=.salon_items", "css:finder"],
+        ["xpath=(//div[@id='js-shops-reload']/div/div)[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "3cf8a8fd-736a-46b7-98bd-9e8619be068f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.salon_item:nth-child(1)",
+      "targets": [
+        ["css=.salon_item:nth-child(1)", "css:finder"],
+        ["xpath=(//div[@id='js-shops-reload']/div/div/div)[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "b6df6470-fce6-4ce6-83e7-651003a5d448",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.salon_item:nth-child(2)",
+      "targets": [
+        ["css=.salon_item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='js-shops-reload']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "dbcc7b2a-376c-4677-990b-47cb14d95de5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.salon_item:nth-child(3)",
+      "targets": [
+        ["css=.salon_item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='js-shops-reload']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "3814ea71-4cb8-47c9-8c9b-4ea3ffe078b2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list_banner li:nth-child(1)",
+      "targets": [
+        ["css=.list_banner li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-shops-reload']/div[3]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "bbd2d25b-d94a-4f5c-b7c6-5c9ae1e397c5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=li > img",
+      "targets": [
+        ["css=li > img", "css:finder"],
+        ["xpath=//img[@alt='СКИДКИ']", "xpath:img"],
+        ["xpath=//div[@id='js-shops-reload']/div[3]/ul/li[2]/img", "xpath:idRelative"],
+        ["xpath=//li[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "50d4a193-e4cf-4acc-a913-67fbd8246df1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list_banner li:nth-child(3)",
+      "targets": [
+        ["css=.list_banner li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='js-shops-reload']/div[3]/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[3]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "e85d459a-ab12-4f7c-b94c-4394299c8877",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.middle__footer-text",
+      "targets": [
+        ["css=.middle__footer-text", "css:finder"],
+        ["xpath=//a[contains(text(),'Адреса\n                      салонов')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/shops/moskva/')])[70]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": "Адреса салонов"
+    }, {
+      "id": "3a0b6db8-d80a-4471-a709-a24a1056f1ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выбрать город",
+      "targets": [
+        ["linkText=Выбрать город", "linkText"],
+        ["css=.shops_list_header-item > .des_main_change_city_fail_btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Выбрать город')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выбрать город')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ddb170a-6e8e-45bc-8060-9def6a5f96b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio-city-item:nth-child(20) > label",
+      "targets": [
+        ["css=.radio-city-item:nth-child(20) > label", "css:finder"],
+        ["xpath=//div[@id='des_changecity_popup']/div/div/div[2]/div[2]/div[20]/label", "xpath:idRelative"],
+        ["xpath=//div[20]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Москва')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66bf16ee-cd0d-4d66-b384-b84932f417b8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.des_form_popupwin_change_city_box",
+      "targets": [
+        ["css=.des_form_popupwin_change_city_box", "css:finder"],
+        ["xpath=//div[@id='des_changecity_popup']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div[9]/div/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "057ea955-85b2-4849-afc7-664fd26fbb81",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.des_form_popupwin_change_city_title",
+      "targets": [
+        ["css=.des_form_popupwin_change_city_title", "css:finder"],
+        ["xpath=//div[@id='des_changecity_popup']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div/div", "xpath:position"]
+      ],
+      "value": "Укажите или выберите город"
+    }, {
+      "id": "a93f5399-703a-441d-8aae-e1507f62e07d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.des_popupwin_close",
+      "targets": [
+        ["css=.des_popupwin_close", "css:finder"],
+        ["xpath=//div[@id='des_changecity_popup']/div/div/span", "xpath:idRelative"],
+        ["xpath=//body/div[12]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e32041a-0663-42a0-8cfc-1341879569f0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=select2-cities-container",
+      "targets": [
+        ["id=select2-cities-container", "id"],
+        ["css=#select2-cities-container", "css:finder"],
+        ["xpath=//span[@id='select2-cities-container']", "xpath:attributes"],
+        ["xpath=//div[@id='des_changecity_popup']/div/div/div[2]/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfebab37-e362-4050-99ab-56ff5f43a41b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.small_nav-menu-item:nth-child(2) > .small_nav-menu-link > span",
+      "targets": [
+        ["css=.small_nav-menu-item:nth-child(2) > .small_nav-menu-link > span", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Адреса салонов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ed3ae22-ec94-4bde-8d56-02d63efac4c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.small_nav-menu-item:nth-child(1) > .small_nav-menu-link > span",
+      "targets": [
+        ["css=.small_nav-menu-item:nth-child(1) > .small_nav-menu-link > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Главная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf3214cb-31c6-4869-8a35-305bca240a61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uh_link:nth-child(2) > .uh_link_text",
+      "targets": [
+        ["css=.uh_link:nth-child(2) > .uh_link_text", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'О компании')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd64e5c8-db6b-4fe9-936e-319a81ac6311",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новости",
+      "targets": [
+        ["linkText=Новости", "linkText"],
+        ["css=.uh_link:nth-child(2) .uh_link_dropdown-item:nth-child(1) > .uh_link_subText", "css:finder"],
+        ["xpath=//a[contains(text(),'Новости')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/news/')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новости')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c34ade3-4218-4d60-8540-4b683932ed6d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.small_nav-menu-item:nth-child(2) span",
+      "targets": [
+        ["css=.small_nav-menu-item:nth-child(2) span", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Новости')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "a4c4053f-416e-419c-b79d-b96a31b31ec9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.small_nav-menu-item:nth-child(2) span",
+      "targets": [
+        ["css=.small_nav-menu-item:nth-child(2) span", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Новости')]", "xpath:innerText"]
+      ],
+      "value": "Новости"
+    }, {
+      "id": "19a765ff-7248-442c-9bdc-3610e56825fb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Новости')]", "xpath:innerText"]
+      ],
+      "value": "Новости"
+    }, {
+      "id": "68e5877b-a03b-478f-8609-bb343e5fa864",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.news__header-block",
+      "targets": [
+        ["css=.news__header-block", "css:finder"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05dbcc4d-cf90-47a4-9f76-9fcf2d3488de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ассортимент",
+      "targets": [
+        ["linkText=Ассортимент", "linkText"],
+        ["css=.news-tags__link--selected", "css:finder"],
+        ["xpath=//a[contains(text(),'Ассортимент')]", "xpath:link"],
+        ["xpath=//li[@id='bx_1847241719_5501']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/news/assortiment/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5792cfa3-2c23-4345-80da-18f07ea876dc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ассортимент компании Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Ассортимент компании Mr.Doors"
+    }, {
+      "id": "f5f0fb79-f4b5-4e74-b5c8-0e01bd586545",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новости компании",
+      "targets": [
+        ["linkText=Новости компании", "linkText"],
+        ["css=#bx_1847241719_5502 > .news-tags__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Новости компании')]", "xpath:link"],
+        ["xpath=//li[@id='bx_1847241719_5502']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/news/novosti-kompanii/')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новости компании')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2ccd2e7-5105-49e9-8650-1e53a9f03ddd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Новости компании компании Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Новости компании компании Mr.Doors"
+    }, {
+      "id": "05fb4986-b963-4a02-887d-67511409b3e9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=События",
+      "targets": [
+        ["linkText=События", "linkText"],
+        ["css=#bx_1847241719_5503 > .news-tags__link", "css:finder"],
+        ["xpath=//a[contains(text(),'События')]", "xpath:link"],
+        ["xpath=//li[@id='bx_1847241719_5503']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/news/sobytiya/')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'События')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e97b41e5-8eca-428a-b490-4f2fe3cc11e4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'События компании Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "События компании Mr.Doors"
+    }, {
+      "id": "1cf172f3-afb6-4324-8ff8-7813286c1cc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=От первого лица",
+      "targets": [
+        ["linkText=От первого лица", "linkText"],
+        ["css=#bx_1847241719_5504 > .news-tags__link", "css:finder"],
+        ["xpath=//a[contains(text(),'От первого лица')]", "xpath:link"],
+        ["xpath=//li[@id='bx_1847241719_5504']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/news/ot-pervogo-lica/')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'От первого лица')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "beb39271-5b08-4635-a8c2-c03d268b44a8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'От первого лица компании Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "От первого лица компании Mr.Doors"
+    }, {
+      "id": "1c2535fa-d1d9-4f33-9e40-9c7bd2cf6bc4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Советы дизайнера",
+      "targets": [
+        ["linkText=Советы дизайнера", "linkText"],
+        ["css=#bx_1847241719_5590 > .news-tags__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Советы дизайнера')]", "xpath:link"],
+        ["xpath=//li[@id='bx_1847241719_5590']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/news/sovety-dizajnera/')]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Советы дизайнера')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95df1a7c-70c4-4e57-982f-7b33757e9379",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'От первого лица компании Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Советы дизайнера компании Mr.Doors"
+    }, {
+      "id": "2ace9308-736d-42c9-ae0e-6aba8cb46816",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выбор звезд",
+      "targets": [
+        ["linkText=Выбор звезд", "linkText"],
+        ["css=#bx_1847241719_5505 > .news-tags__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Выбор звезд')]", "xpath:link"],
+        ["xpath=//li[@id='bx_1847241719_5505']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/news/vybor-zvezd/')]", "xpath:href"],
+        ["xpath=//div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выбор звезд')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1721439a-a9d5-4a94-b0f0-9739142a8d21",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'От первого лица компании Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Выбор звезд компании Mr.Doors"
+    }, {
+      "id": "7d7f9fe1-b185-4d5c-98f7-2c2d48693e65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Все",
+      "targets": [
+        ["linkText=Все", "linkText"],
+        ["css=.news-tags__item:nth-child(7) > .news-tags__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Все')])[8]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/news/')])[11]", "xpath:href"],
+        ["xpath=//div/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "267e0b1d-3339-45f7-8233-e587fb267649",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.news__list",
+      "targets": [
+        ["css=.news__list", "css:finder"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "f556e816-6767-45a2-97e3-e061acecc9f2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2022",
+      "targets": [
+        ["linkText=2022", "linkText"],
+        ["css=.years__item:nth-child(1) > .years__link", "css:finder"],
+        ["xpath=//a[contains(text(),'2022')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/news/filter/2022/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b2ff6b-c28c-47b3-b570-dfdd939fc257",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Новости 2022')]", "xpath:innerText"]
+      ],
+      "value": "Новости 2022"
+    }, {
+      "id": "ae7376a2-d61b-4438-8c28-54223dd99b04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2021",
+      "targets": [
+        ["linkText=2021", "linkText"],
+        ["css=.years__item:nth-child(2) > .years__link", "css:finder"],
+        ["xpath=//a[contains(text(),'2021')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/news/filter/2021/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2021')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe63cd0d-058b-44b8-ada6-720b0b20a3f2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Новости 2021"
+    }, {
+      "id": "66ba506c-6a08-4aea-ae8d-ca45f925b299",
+      "comment": "",
+      "command": "click",
+      "target": "css=.years__link--more",
+      "targets": [
+        ["css=.years__link--more", "css:finder"],
+        ["xpath=//li[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f90967-78bb-441e-91b0-78548008cb18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.years__link--more",
+      "targets": [
+        ["css=.years__link--more", "css:finder"],
+        ["xpath=//li[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62e9737b-ef27-4d7b-bb84-4c363201e773",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Франшиза",
+      "targets": [
+        ["linkText=Франшиза", "linkText"],
+        ["css=.uh_link:nth-child(3) .uh_link_dropdown-item:nth-child(1) > .uh_link_subText", "css:finder"],
+        ["xpath=//a[contains(text(),'Франшиза')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dealers/')]", "xpath:href"],
+        ["xpath=//li[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Франшиза')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e855246e-1c66-4ca5-9954-a461a3c03fe1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.t941",
+      "targets": [
+        ["css=.t941", "css:finder"],
+        ["xpath=//div[@id='rec333627617']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "ece4409a-acc7-4316-b9ce-8eb411aa5388",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.t456__list",
+      "targets": [
+        ["css=.t456__list", "css:finder"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "6f59ee90-31ea-49a5-8314-087d39f228be",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.t456__imglogo",
+      "targets": [
+        ["css=.t456__imglogo", "css:finder"],
+        ["xpath=//img[@alt='Company']", "xpath:img"],
+        ["xpath=//div[@id='nav333634823']/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "1a3790a3-4103-427e-a196-9a977ac848a1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='rec333627617']/div/div/div/div/div/strong/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'ТОП-3 мебельных франшиз по версии Forbes')]", "xpath:innerText"]
+      ],
+      "value": "ТОП-3 мебельных франшиз по версии Forbes"
+    }, {
+      "id": "b10e91e8-0c26-461c-b59e-2e925fedd25b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.t941__descr > span:nth-child(1)",
+      "targets": [
+        ["css=.t941__descr > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='rec333627617']/div/div/div/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"]
+      ],
+      "value": "Запустите собственный салон мебели"
+    }, {
+      "id": "9c910824-48aa-4887-acac-e365c7506860",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.t941__descr > span:nth-child(3)",
+      "targets": [
+        ["css=.t941__descr > span:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='rec333627617']/div/div/div/div/div[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": "с маржинальностью 50%"
+    }, {
+      "id": "f4af06ae-17e0-4ecc-aed1-4057ff7d7d33",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Рассчитать",
+      "targets": [
+        ["linkText=Рассчитать", "linkText"],
+        ["css=.t941__btn", "css:finder"],
+        ["xpath=//div[@id='rec333627617']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рассчитать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be03248f-a0c9-43f3-bb9b-8f57bd5c7874",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=count_popup",
+      "targets": [
+        ["id=count_popup", "id"],
+        ["css=#count_popup", "css:finder"],
+        ["xpath=//span[@id='count_popup']", "xpath:attributes"],
+        ["xpath=//div[@id='rec333627617']/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Рассчитать')]", "xpath:innerText"]
+      ],
+      "value": "Рассчитать"
+    }, {
+      "id": "97f54c64-0d0c-44a4-8964-39d2b611276f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.t456__list_item:nth-child(1) > .t-menu__link-item",
+      "targets": [
+        ["css=.t456__list_item:nth-child(1) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Варианты\n                                    франшизы')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333684343')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed2a47c5-ddd1-4917-a375-d5901884b891",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.t456__list_item:nth-child(1) > .t-menu__link-item",
+      "targets": [
+        ["css=.t456__list_item:nth-child(1) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Варианты\n                                    франшизы')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333684343')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": "Варианты франшизы"
+    }, {
+      "id": "0aa9329f-6ddd-4fe1-9fd3-1cb317f08a5b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Этапы открытия",
+      "targets": [
+        ["linkText=Этапы открытия", "linkText"],
+        ["css=.t456__list_item:nth-child(2) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Этапы открытия')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333706301')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Этапы открытия')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad24175-f85a-4456-8fda-a45258050478",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Этапы открытия",
+      "targets": [
+        ["linkText=Этапы открытия", "linkText"],
+        ["css=.t456__list_item:nth-child(2) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Этапы открытия')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333706301')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Этапы открытия')]", "xpath:innerText"]
+      ],
+      "value": "Этапы открытия"
+    }, {
+      "id": "dd6a0657-9a81-49a9-9a03-f944383c1d38",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Истории успеха",
+      "targets": [
+        ["linkText=Истории успеха", "linkText"],
+        ["css=.t456__list_item:nth-child(3) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Истории успеха')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333693508')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Истории успеха')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f79e91b4-1508-4677-a784-24ae79da2153",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Истории успеха",
+      "targets": [
+        ["linkText=Истории успеха", "linkText"],
+        ["css=.t456__list_item:nth-child(3) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Истории успеха')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333693508')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Истории успеха')]", "xpath:innerText"]
+      ],
+      "value": "Истории успеха"
+    }, {
+      "id": "fcddc583-52a8-444c-9137-c25c88128b13",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Контакты",
+      "targets": [
+        ["linkText=Контакты", "linkText"],
+        ["css=.t456__list_item:nth-child(4) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакты')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333715935')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33ac1048-763c-4f07-ab75-9428b43d6f95",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Контакты",
+      "targets": [
+        ["linkText=Контакты", "linkText"],
+        ["css=.t456__list_item:nth-child(4) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакты')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#rec333715935')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакты')]", "xpath:innerText"]
+      ],
+      "value": "Контакты"
+    }, {
+      "id": "a9f38a0b-90c8-4c35-8c6d-47d6756484d7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=+7(800)222-39-34",
+      "targets": [
+        ["linkText=+7(800)222-39-34", "linkText"],
+        ["css=.t456__list_item:nth-child(5) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'+7(800)222-39-34')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tel:+78002223934')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'+7(800)222-39-34')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac6b0c6-7cb1-4b23-9612-1a0f2ececa85",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=+7(800)222-39-34",
+      "targets": [
+        ["linkText=+7(800)222-39-34", "linkText"],
+        ["css=.t456__list_item:nth-child(5) > .t-menu__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'+7(800)222-39-34')]", "xpath:link"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tel:+78002223934')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'+7(800)222-39-34')]", "xpath:innerText"]
+      ],
+      "value": "+7(800)222-39-34"
+    }, {
+      "id": "50c67915-9739-4632-91f1-6793782de7a9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.head_link_span",
+      "targets": [
+        ["css=.head_link_span", "css:finder"],
+        ["xpath=//div[@id='nav333634823']/div/div[2]/ul/li[5]/span", "xpath:idRelative"],
+        ["xpath=//li[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'(звонок по России бесплатный)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c39b334-e7e4-4ee5-8eb6-0665cb9b285c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t456__imglogo",
+      "targets": [
+        ["css=.t456__imglogo", "css:finder"],
+        ["xpath=//img[@alt='Company']", "xpath:img"],
+        ["xpath=//div[@id='nav333634823']/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f1ee8a4-398e-4924-9fb6-b7b75181d9e8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.contacts:nth-child(5)",
+      "targets": [
+        ["css=.contacts:nth-child(5)", "css:finder"],
+        ["xpath=//footer/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "033038d7-362a-45ef-984a-d4ab736c6e00",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.socialMedia:nth-child(5) .socialMedia-tg",
+      "targets": [
+        ["css=.socialMedia:nth-child(5) .socialMedia-tg", "css:finder"],
+        ["xpath=//div[5]/div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "838f399e-545f-46ea-9818-2245bbe7392d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.socialMedia:nth-child(5) .socialMedia-vk",
+      "targets": [
+        ["css=.socialMedia:nth-child(5) .socialMedia-vk", "css:finder"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e67a6f97-9981-4678-b5a0-25028067d1ad",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.socialMedia:nth-child(5) .socialMedia-whatsApp",
+      "targets": [
+        ["css=.socialMedia:nth-child(5) .socialMedia-whatsApp", "css:finder"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76dc00dc-c593-4346-a7ae-9fd250380841",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.socialMedia:nth-child(5) .socialMedia-youTube",
+      "targets": [
+        ["css=.socialMedia:nth-child(5) .socialMedia-youTube", "css:finder"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f61b7be-45e9-4920-8413-d6afd6ca82c5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a:nth-child(1) > .socialMedia-youTube",
+      "targets": [
+        ["css=a:nth-child(1) > .socialMedia-youTube", "css:finder"],
+        ["xpath=//div[5]/div[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f1ee2ea-d290-40fa-a9b5-ff4d2ff1c00b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a:nth-child(2) > .socialMedia-youTube",
+      "targets": [
+        ["css=a:nth-child(2) > .socialMedia-youTube", "css:finder"],
+        ["xpath=//div[5]/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ab088de-f133-4b86-9eff-7ddb77deff5e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.contacts:nth-child(5) #open_pop_up",
+      "targets": [
+        ["css=.contacts:nth-child(5) #open_pop_up", "css:finder"],
+        ["xpath=(//a[contains(text(),'Обратный звонок')])[2]", "xpath:link"],
+        ["xpath=(//a[@id='open_pop_up'])[2]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46a589bd-ebd2-4c07-9d6c-0644128f55e8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.contacts:nth-child(5) > .phone > a",
+      "targets": [
+        ["css=.contacts:nth-child(5) > .phone > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'8-800-222-35-93')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'tel:+78002223593')])[2]", "xpath:href"],
+        ["xpath=//footer/div/div/div/div[5]/div/a", "xpath:position"]
+      ],
+      "value": "8-800-222-35-93"
+    }, {
+      "id": "ac620700-eb69-47c4-b359-f752fc55fe00",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.contacts:nth-child(5) > .workingMode > p",
+      "targets": [
+        ["css=.contacts:nth-child(5) > .workingMode > p", "css:finder"],
+        ["xpath=//div[5]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'с 08:00 до 21:00 по Мск')]", "xpath:innerText"]
+      ],
+      "value": "с 08:00 до 21:00 по Мск"
+    }, {
+      "id": "5bbaee02-a3b2-4aff-ac41-2b6c4db84c82",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.entrance:nth-child(1) > .title",
+      "targets": [
+        ["css=.entrance:nth-child(1) > .title", "css:finder"],
+        ["xpath=//footer/div/div/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5da424d-751a-4cf9-bd82-bdfd3d324997",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.entrance:nth-child(1) > .title",
+      "targets": [],
+      "value": "Mr.Doors\\nмебель на заказ"
+    }, {
+      "id": "5b4b30f0-6c02-4e46-b4fc-19be17ef710f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.footer_body .aboutCompany__title",
+      "targets": [
+        ["css=.footer_body .aboutCompany__title", "css:finder"],
+        ["xpath=//footer/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'О компании')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39cf9a50-3f81-41c0-93b2-14d86c608819",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.footer_body .aboutCompany__title",
+      "targets": [],
+      "value": "О компании"
+    }, {
+      "id": "e8d5d878-5648-4cc1-abdb-4f60b9eb3d39",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.buyer:nth-child(3) > .buyer__title",
+      "targets": [
+        ["css=.buyer:nth-child(3) > .buyer__title", "css:finder"],
+        ["xpath=//div/div/div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Покупателю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a784fa36-6c65-4919-b50b-79baeeccd19d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.buyer:nth-child(3) > .buyer__title",
+      "targets": [],
+      "value": "Покупателю"
+    }, {
+      "id": "aa7d2be0-cd1d-41bb-8a8b-df841511b712",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.cooperation:nth-child(4) > .cooperation__title",
+      "targets": [
+        ["css=.cooperation:nth-child(4) > .cooperation__title", "css:finder"],
+        ["xpath=//div/div/div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Сотрудничество')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "684c3708-9321-4b52-b337-dfae1979d892",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.cooperation:nth-child(4) > .cooperation__title",
+      "targets": [],
+      "value": "Сотрудничество"
+    }, {
+      "id": "ae2614de-47ab-4aae-b6f1-d5ff810f12d7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.lower_footer:nth-child(3) > p:nth-child(1)",
+      "targets": [
+        ["css=.lower_footer:nth-child(3) > p:nth-child(1)", "css:finder"],
+        ["xpath=//footer/div/div/div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'© 2004 - 2022 Мебель и кухни на заказ от Mr.Doors (Мистер Дорс)')]", "xpath:innerText"]
+      ],
+      "value": "© 2004 - 2022 Мебель и кухни на заказ от Mr.Doors (Мистер Дорс)"
+    }, {
+      "id": "11f7a95a-85c3-4768-a031-3c598748ac2f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Условия пользования сайтом",
+      "targets": [
+        ["linkText=Условия пользования сайтом", "linkText"],
+        ["css=.lower_footer:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Условия пользования сайтом')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/terms/')]", "xpath:href"],
+        ["xpath=//div[3]/p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Условия пользования сайтом')]", "xpath:innerText"]
+      ],
+      "value": "Условия пользования сайтом"
+    }, {
+      "id": "80bd2659-126e-4f33-9a6e-37ab399a90af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Условия пользования сайтом",
+      "targets": [
+        ["linkText=Условия пользования сайтом", "linkText"],
+        ["css=.lower_footer:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Условия пользования сайтом')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/terms/')]", "xpath:href"],
+        ["xpath=//div[3]/p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Условия пользования сайтом')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "287f113d-8265-4a76-97eb-3331cd5badbb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Условия пользования сайтом')]", "xpath:innerText"]
+      ],
+      "value": "Условия пользования сайтом"
+    }, {
+      "id": "bc778f70-e062-4913-8248-2a8475419af4",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(1) > .breadcrumbs-link > span",
+      "targets": [
+        ["css=span:nth-child(1) > .breadcrumbs-link > span", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/section/div[2]/div/span/a/span", "xpath:idRelative"],
+        ["xpath=//span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f60ff6-1fab-49c4-90a2-a0fcb7dde9b9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.swiper-slide-visible .swiper-banner_box",
+      "targets": [
+        ["css=.swiper-slide-visible .swiper-banner_box", "css:finder"],
+        ["xpath=//div[@id='swiper-wrapper-a10f5f917a136f908']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": "15000"
+    }, {
+      "id": "373ff376-670b-4f14-896a-4426ce99dd16",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.swiper-button-prev:nth-child(3)",
+      "targets": [
+        ["css=.swiper-button-prev:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='comp_c17bd9fac320b6c287a9da9a119f9c2d']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "235dd029-c357-4ba1-ba28-de865379a353",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.swiper-button-next:nth-child(4)",
+      "targets": [
+        ["css=.swiper-button-next:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='comp_c17bd9fac320b6c287a9da9a119f9c2d']/div/div/div[4]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc09fd4-dc30-4fa3-bd7a-b2c887745fe6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.intro b",
+      "targets": [
+        ["css=.intro b", "css:finder"],
+        ["xpath=//p/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Мебель на заказ Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Мебель на заказ Mr.Doors"
+    }, {
+      "id": "56973e0f-9aa2-4acc-a75d-c21b7a947ab2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ea17375d-0206-4c34-9d06-c22692d8ec47",
+    "name": "Search_field_Home_page",
+    "commands": [{
+      "id": "05e7e647-af87-44f6-8760-21d94dae4460",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6af5683-e750-476c-901d-1e90111d2996",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18952f6b-9c67-4ad6-ae9f-169ecd292e57",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "https://www.mrdoors.ru/ "
+    }, {
+      "id": "35dcf8ad-bdfc-4c01-87bc-46b5f585bf0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.QCzoEc path",
+      "targets": [
+        ["css=.QCzoEc path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e669263-0d77-4bc5-afa0-2248df24b4b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.QCzoEc > svg",
+      "targets": [
+        ["css=.QCzoEc > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd004c25-dc10-4ee2-a558-cc84bb2cd445",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b5b9de-2a30-4757-9584-c45dc8c29349",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Mr. Doors: Главная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd78b336-2606-468b-8c57-5ac865135d0a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.mrdoors.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "188202e1-4dbd-437b-958a-8cbac620d626",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1917x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcf7a3c7-036d-47e6-97fb-287df1f9ac0a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Главная | Mr. Doors",
+      "targets": [],
+      "value": "Главная | Mr. Doors"
+    }, {
+      "id": "bd85e61f-6ecd-47df-bf68-8cccf025aefc",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.swiper-slide-visible .swiper-banner_box",
+      "targets": [
+        ["css=.swiper-slide-visible .swiper-banner_box", "css:finder"],
+        ["xpath=//div[@id='swiper-wrapper-f12a48f8f3fdf053']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "e7f246d3-f08e-4bce-8598-3dca2e2eb9be",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Мебель на заказ от Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "eabd8cec-b808-4980-ae11-073712f5642f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Мебель на заказ от Mr.Doors')]", "xpath:innerText"]
+      ],
+      "value": "Мебель на заказ от Mr.Doors"
+    }, {
+      "id": "c3462697-1894-4349-a504-a3f2cdf7da45",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=section:nth-child(10) > .section_Lefttitle > p",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "efe060e8-e066-42a8-a428-d1efdfbfd897",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=section:nth-child(10) > .section_Lefttitle > p",
+      "targets": [
+        ["css=section:nth-child(10) > .section_Lefttitle > p", "css:finder"],
+        ["xpath=//section[8]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Вопросы и ответы')]", "xpath:innerText"]
+      ],
+      "value": "Вопросы и ответы"
+    }, {
+      "id": "d71e20db-60ee-4677-b6d3-22e89018ab2e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.subscribe-button",
+      "targets": [
+        ["css=.subscribe-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='index-subscribe']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//form/div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Подписаться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f55b33f-647a-4564-b029-79ac1270fa39",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.contacts:nth-child(5) #open_pop_up",
+      "targets": [
+        ["css=.contacts:nth-child(5) #open_pop_up", "css:finder"],
+        ["xpath=(//a[contains(text(),'Обратный звонок')])[2]", "xpath:link"],
+        ["xpath=(//a[@id='open_pop_up'])[2]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "399c1c55-7fcb-4560-8443-81066784151b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=info@mrdoors.ru",
+      "targets": [
+        ["linkText=info@mrdoors.ru", "linkText"],
+        ["css=.email > a", "css:finder"],
+        ["xpath=//a[contains(text(),'info@mrdoors.ru')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mailto:info@mrdoors.ru')]", "xpath:href"],
+        ["xpath=//div[5]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'info@mrdoors.ru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed010509-21c0-4721-84e3-2792fc85df23",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search .search-form", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "1213fa38-7195-4fb3-9710-d6b58d1ec0bd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.search img",
+      "targets": [
+        ["css=.search img", "css:finder"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a59ff5a-1eaf-442b-9bab-596ca7bb30d9",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search .search-form", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d90116e-3ee3-4eb1-846c-cdf020647f40",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search .search-form", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "981cf621-d167-40de-acc5-eb41e71a4621",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search img",
+      "targets": [
+        ["css=.search img", "css:finder"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e298075c-926d-4aed-80cc-7c3d8362c6cb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Поиск по сайту')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7205a79d-6e59-4967-a15e-6fd076e024f9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Поиск по сайту')]", "xpath:innerText"]
+      ],
+      "value": "Поиск по сайту"
+    }, {
+      "id": "de24fc3e-ae66-4e68-94d8-7cd204dc6bac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.center > b",
+      "targets": [
+        ["css=.center > b", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/div[2]/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'По вашему запросу «qwerty» страниц не найдено')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "464f2d2d-605d-446e-a698-3c1e01c988e5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.center > b",
+      "targets": [
+        ["css=.center > b", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/div[2]/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'По вашему запросу «qwerty» страниц не найдено')]", "xpath:innerText"]
+      ],
+      "value": "По вашему запросу «qwerty» страниц не найдено"
+    }, {
+      "id": "dc430e73-b55d-4c23-99be-7c863804b0b0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-header-text", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='des_mobile_panel']/div[3]/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b96b631-417f-4bd5-9277-45b88db02e3c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.des_footer_box",
+      "targets": [
+        ["css=.des_footer_box", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/footer", "xpath:idRelative"],
+        ["xpath=//footer", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c58a037-92a9-4fa0-b156-8e1fab556f81",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.des_footer_menu_saloons",
+      "targets": [
+        ["css=.des_footer_menu_saloons", "css:finder"],
+        ["xpath=(//a[contains(text(),'Адреса салонов')])[2]", "xpath:link"],
+        ["xpath=(//a[@onclick=\"var _rutarget=window._rutarget||[];_rutarget.push({'event':'thankYou','conv_id':'address_salon'});\"])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shops/moskva/')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eff5aaf-f646-4dac-894f-d7082870c134",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.des_footer_menu_online_pay",
+      "targets": [
+        ["css=.des_footer_menu_online_pay", "css:finder"],
+        ["xpath=//a[contains(text(),'Заявка на рассрочку')]", "xpath:link"],
+        ["xpath=//a[@onclick='javascript:(beeline_push(7048));']", "xpath:attributes"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[21]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26c17311-c54e-4e21-ac2d-2fae8fa1f104",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.des_footer_menu_zamer",
+      "targets": [
+        ["css=.des_footer_menu_zamer", "css:finder"],
+        ["xpath=//a[contains(text(),'Рассчитать проект')]", "xpath:link"],
+        ["xpath=(//a[@onclick='javascript:(beeline_push(7046));'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[22]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b01acaf7-24b0-4007-a61f-b5abe653ad3a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Мы в Telegramm",
+      "targets": [
+        ["linkText=Мы в Telegramm", "linkText"],
+        ["css=.des_socmenu_menu_tg", "css:finder"],
+        ["xpath=//a[contains(text(),'Мы в Telegramm')]", "xpath:link"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://t.me/MisterDOORS_bot')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мы в Telegramm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28ffcc76-9165-4fd3-b5b1-a742492000ba",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Мы в VK",
+      "targets": [
+        ["linkText=Мы в VK", "linkText"],
+        ["css=.des_socmenu_menu_vk", "css:finder"],
+        ["xpath=//a[contains(text(),'Мы в VK')]", "xpath:link"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://vk.com/mr.doors_russia')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мы в VK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60d0fcd7-b062-40b5-a75e-44da2fbbf167",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Мы в Youtube",
+      "targets": [
+        ["linkText=Мы в Youtube", "linkText"],
+        ["css=.des_socmenu_menu_you", "css:finder"],
+        ["xpath=//a[contains(text(),'Мы в Youtube')]", "xpath:link"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.youtube.com/user/MrDoorsVideo')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мы в Youtube')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdce6ec3-0d53-4fe2-83ad-347feb209827",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Мы в Одноклассники",
+      "targets": [
+        ["linkText=Мы в Одноклассники", "linkText"],
+        ["css=.des_socmenu_menu_ok", "css:finder"],
+        ["xpath=//a[contains(text(),'Мы в Одноклассники')]", "xpath:link"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ok.ru/mr.doors')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мы в Одноклассники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6116bb3a-3e9c-456b-bf90-070d286a3cce",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Яндекс Дзен",
+      "targets": [
+        ["linkText=Яндекс Дзен", "linkText"],
+        ["css=.des_socmenu_menu_dz", "css:finder"],
+        ["xpath=//a[contains(text(),'Яндекс Дзен')]", "xpath:link"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://zen.yandex.ru/id/623326e158f0eb4d34d78c98')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Яндекс Дзен')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f88bc45c-8123-4c1d-9d8e-36a01835e893",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.des_copy",
+      "targets": [
+        ["css=.des_copy", "css:finder"],
+        ["xpath=//div[@id='des_mobile_panel']/footer/div[2]/div", "xpath:idRelative"],
+        ["xpath=//footer/div[2]/div", "xpath:position"]
+      ],
+      "value": "© 2004 - 2022 Мебель и кухни на заказ от Mr.Doors (Мистер Дорс)"
+    }, {
+      "id": "58e893a1-b877-452a-8ed5-5a3a6b319f7a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8929db20-d477-406f-acb2-aa951850d38f",
+    "name": "Positive_testing",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1b0da5c4-d76e-428d-82c5-9a06b9f6d7b9"]
+  }, {
+    "id": "7e17d9cf-bbc9-47c2-a5d1-ddc77059bf17",
+    "name": "Negative_testing",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea17375d-0206-4c34-9d06-c22692d8ec47"]
+  }],
+  "urls": ["https://www.mrdoors.ru/", "https://www.google.com/"],
+  "plugins": []
+}
