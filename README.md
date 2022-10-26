@@ -25,7 +25,7 @@
 - [Test Plan](https://drive.google.com/drive/folders/1Y3-ylBt-7ShxrFTf_pNQ-aGSpmMOK60p?usp=sharing)
 - [Auto-tests Selenium IDE](https://drive.google.com/drive/folders/1Xrb2MTqM-i3RU-uQTofncBtDfXoZXd1Z?usp=sharing)
 - [Auto-tests API Postman](https://drive.google.com/drive/folders/1HaV_fYhD_ACBT44FcQBlzzs69uag-jXa?usp=sharing)
-- [Certificates](https://drive.google.com/drive/folders/1Y3-ylBt-7ShxrFTf_pNQ-aGSpmMOK60p?usp=sharing)
+- [Certificates](https://drive.google.com/drive/folders/1hxGPf9Y44kYSGHmtDfuxoE644cpF0Z0W?usp=sharing)
 ### Follow me
 [![Header](https://img.shields.io/badge/Telegram-090909?style=for-the-badge&logo=telegram&logoColor=31a5db)](https://t.me/kirichenkomariya)
 [![Header](https://img.shields.io/badge/Linkedin-090909?style=for-the-badge&logo=linkedin&logoColor=0073b1)](https://www.linkedin.com/in/mariia-kirichenko/)
